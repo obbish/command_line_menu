@@ -10,11 +10,13 @@ commands=(
 
 # Function to display the menu
 show_menu() {
+    echo
     echo "Choose a command to run:"
     echo "-----------------------"
     for ((i=0; i<${#commands[@]}; i++)); do
         echo "[$i] ${commands[i]%%:*}"  # Display command name
     done
+    echo
     echo "[q] Quit"
 }
 

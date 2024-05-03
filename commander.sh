@@ -16,15 +16,14 @@ show_menu() {
     for ((i=0; i<${#commands[@]}; i++)); do
         echo "[$i] ${commands[i]%%:*}"  # Display command name
     done
-    echo
-    echo "[q] Quit"
 }
 
 # Main function
 main() {
     while true; do
         show_menu
-        read -p "Enter your choice: " choice
+        echo
+        read -p "Enter your choice, [q] to quit: " choice
 
         # Validate the choice
         if [[ "$choice" == "q" ]]; then

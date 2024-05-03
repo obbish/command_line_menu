@@ -1,2 +1,2 @@
-- put in your commands and name them the top
-- the script creates a menu to choose from which command to run
+- put in your commands and name them in the first section
+- when run, script gives user a menu to choose which command to run
